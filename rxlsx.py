@@ -40,4 +40,17 @@ for i in vals:
 vals = vals2
 del vals2
 
-print(vals)
+# Создаем списки  по дням
+week = ('Вторник', 'Среда', 'Четверг', 'Пятница',)
+
+monday = vals[:vals.index(week[0])]
+tuesday = vals[vals.index(week[0]):vals.index(week[1])]
+wednesday = vals[vals.index(week[1]):vals.index(week[2])]
+thursday = vals[vals.index(week[2]):vals.index(week[3])]
+friday =  vals[vals.index(week[3]):]
+
+print(monday)
+print(tuesday)
+print(wednesday)
+print(thursday)
+print(friday)
