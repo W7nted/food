@@ -29,8 +29,8 @@ for i in range(len(vals)):
 vals = [value for value in vals2 if value]
 
 # Удаляем не нужные элементы
-del vals[-3:]
-del vals[:1]
+# del vals[-3:]
+# del vals[:1]
 
 # Избавляемся от вложенных списков
 vals2 = []
@@ -39,18 +39,18 @@ for i in vals:
         vals2.append(j)
 vals = vals2
 del vals2
-
+print(vals)
 # Создаем списки  по дням
 week = ('Вторник', 'Среда', 'Четверг', 'Пятница',)
 
-monday = vals[:vals.index(week[0])]
-tuesday = vals[vals.index(week[0]):vals.index(week[1])]
-wednesday = vals[vals.index(week[1]):vals.index(week[2])]
-thursday = vals[vals.index(week[2]):vals.index(week[3])]
-friday =  vals[vals.index(week[3]):]
+monday_menu = vals[:vals.index(week[0])]
+# tuesday_menu = vals[vals.index(week[0]):vals.index(week[1])]
+# wednesday_menu = vals[vals.index(week[1]):vals.index(week[2])]
+# thursday_menu = vals[vals.index(week[2]):vals.index(week[3])]
+# friday_menu =  vals[vals.index(week[3]):]
 
-print(monday)
-print(tuesday)
-print(wednesday)
-print(thursday)
-print(friday)
+print(monday_menu)
+# print(tuesday_menu)
+# print(wednesday_menu)
+# print(thursday_menu)
+# print(friday_menu)
